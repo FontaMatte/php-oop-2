@@ -6,7 +6,7 @@
         public $quantity;
         public $expirationDate;
 
-        function __construct($name, $description, $price, $category, $type, $image, $quantity, $expirationDate) {
+        function __construct($name, $description, $price, Category $category, $type, $image, $quantity, $expirationDate) {
 
             parent::__construct($name, $description, $price, $category, $type, $image);
 

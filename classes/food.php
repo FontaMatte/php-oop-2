@@ -7,7 +7,7 @@
         public $animalAge;
         public $expirationDate;
 
-        function __construct($name, $description, $price, $category, $type, $image, $quantity, $animalAge, $expirationDate) {
+        function __construct($name, $description, $price, Category $category, $type, $image, $quantity, $animalAge, $expirationDate) {
 
             parent::__construct($name, $description, $price, $category, $type, $image);
 

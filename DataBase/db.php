@@ -44,6 +44,8 @@
         'marzo 2026'
     );
 
+    $foodArray = [$food1, $food2, $food3];
+
     //Istanze Giochi
     $toy1 = new Toy (
         'Trixie corda gioco per cani',
@@ -76,35 +78,39 @@
         'vari',
     );
 
+    $toysArray = [$toy1, $toy2, $toy3];
+
     //Istanze Prodotti animal Care
     $animalCare1 = new AnimalCare (
-        'Trixie corda gioco per cani',
-        'Corda gioco con nodi di Trixie per cani, in diverse misure, perfetta per il tira e molla, contribuisce a pulire gli spazi interdentali in modo giocoso, in cotone robusto ma leggero.',
-        2.50,
+        'Pet Head Shampoo Sensitive Soul',
+        'Shampoo Pet Head Sensitive Soul per cani con pelle sensibile, con fiocchi d\'avena, estratto di calendula, olio di marula & Aloe Vera, cura e deterge delicatamente.',
+        12.99,
         new Category ('Cani', '&#128054;'),
         'animal care',
-        'https://shop-cdn-m.mediazs.com/bilder/trixie/corda/gioco/per/cani/8/400/7992_pla_trixie_spieltau_grau_hs8_8.jpg',
-        'tutti',
-        'corda',
+        'https://shop-cdn-m.mediazs.com/bilder/pet/head/shampoo/sensitive/soul/5/400/159699_pla_companyofanimals_pethead_sensitivesoul_shampoo_300ml_hs_01_5.jpg',
+        '300ml',
+        'Agosto 2027',
     );
     $animalCare2 = new AnimalCare (
-        'Trixie corda gioco per cani',
-        'Corda gioco con nodi di Trixie per cani, in diverse misure, perfetta per il tira e molla, contribuisce a pulire gli spazi interdentali in modo giocoso, in cotone robusto ma leggero.',
-        2.50,
+        'Olio di cocco vergine BIO per animali',
+        'Olio di cocco per cani e gatti 100% biologico naturale, per uso orale ed esterno, con elevato contenuto di acido laurico contro zecche, parassiti e agenti patogeni, per la salute di pelle e pelo.',
+        10.49,
         new Category ('Cani', '&#128054;'),
         'animal care',
-        'https://shop-cdn-m.mediazs.com/bilder/trixie/corda/gioco/per/cani/8/400/7992_pla_trixie_spieltau_grau_hs8_8.jpg',
-        'tutti',
-        'corda',
+        'https://shop-cdn-m.mediazs.com/bilder/olio/di/cocco/vergine/bio/per/animali/8/400/75989_pla_biovirgincoconutoil_hs_01_8.jpg',
+        '500ml',
+        'gennaio 2026',
     );
     $animalCare3 = new AnimalCare (
-        'Trixie corda gioco per cani',
-        'Corda gioco con nodi di Trixie per cani, in diverse misure, perfetta per il tira e molla, contribuisce a pulire gli spazi interdentali in modo giocoso, in cotone robusto ma leggero.',
-        2.50,
-        new Category ('Cani', '&#128049;'),
+        'Lettiera Tigerino Crystals - Sensitive (senza profumo)',
+        'Lettiera in silicio Crystals Tigerino Sensitive, ultra assorbente e dall\'ottima resa, neutralizza all\'istante i cattivi odori, priva di polvere e senza profumo, per gatti sensibili agli odori.',
+        8.29,
+        new Category ('Gatti', '&#128049;'),
         'animal care',
-        'https://shop-cdn-m.mediazs.com/bilder/trixie/corda/gioco/per/cani/8/400/7992_pla_trixie_spieltau_grau_hs8_8.jpg',
-        'tutti',
-        'corda',
+        'https://shop-cdn-m.mediazs.com/bilder/lettiera/tigerino/crystals/sensitive/senza/profumo/2/400/tigerino_crystal_sensitive_5l_1000x1000_2.jpg',
+        '2.1 Kg',
+        'No scadenza',
     );
+
+    $animalCareArray = [$animalCare1, $animalCare2, $animalCare3];
 

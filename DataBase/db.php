@@ -134,21 +134,22 @@
 
     //Istanze carte di credito
     try {
-        $creditCard1 = new CreditCard(5675657687,new DateTime('2024-01-01'),545);
+        $creditCard1 = new CreditCard(5675657687736452,new DateTime('2024-01-01'),545);
     }
     catch (Exception $e) {
         echo '<h1>ERRORE: Carta Scaduta</h1>';
         die();
     }
-    // $creditCard1 = new CreditCard(567435687,new DateTime('20205-01-01'),977);
-    // $creditCard1 = new CreditCard(567768677687,new DateTime('2026-01-01'),324);
-    // $creditCard1 = new CreditCard(532442387,new DateTime('2021-01-01'),767);
+
+    // $creditCard2 = new CreditCard(567435687,new DateTime('20205-01-01'),977);
+    // $creditCard3 = new CreditCard(567768677687,new DateTime('2026-01-01'),324);
+    // $creditCard4 = new CreditCard(532442387,new DateTime('2021-01-01'),767);
 
     // Istanze Ordini
-    $order1 = new Order($customer1, $cart1, $creditCard1);
-    $order2 = new Order($customer2, $cart2, $creditCard1);
-    $order3 = new Order($customer3, $cart3, $creditCard1);
-    $order4 = new Order($customer4, $cart4, $creditCard1);
+    // $order1 = new Order($customer1, $cart1, $creditCard1);
+    // $order2 = new Order($customer2, $cart2, $creditCard2);
+    // $order3 = new Order($customer3, $cart3, $creditCard3);
+    // $order4 = new Order($customer4, $cart4, $creditCard4);
 
     // var_dump($order1);
 

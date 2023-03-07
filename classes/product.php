@@ -22,16 +22,6 @@
 
         }
 
-        public function print(){
-
-            echo "<li><strong>Categoria: </strong>".$this->category."</li>";
-            echo "<li><strong>".$this->name."</strong></li>";
-            echo "<li><img src='".$this->image.'" alt"'.$this->name."'/></li>";
-            echo "<li><strong>Prezzo: </strong>".$this->price."</li>";
-            echo "<li><strong>Descrizione: </strong>".$this->description."</li>";
-            echo "<li><strong>Tipo: </strong>".$this->type."</li>";
-
-        }
     }
 
 ?>

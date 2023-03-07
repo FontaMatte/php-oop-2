@@ -3,7 +3,7 @@
 
         private $name;
         private $email;
-        private $paymentCard = false;
+        private $address;
 
         public function __construct($name, $email) {
 
@@ -20,13 +20,8 @@
             return $this->email;
         }
 
-        public function getPaymentCard($paymentCard) {
-
-            $this->paymentCard = $paymentCard;
-        }
-
-        public function setPaymentCard() {
-            return $this->paymentCard;
+        public function getAddress() {
+            return $this->address;
         }
 
     }

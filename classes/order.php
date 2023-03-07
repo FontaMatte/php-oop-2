@@ -2,16 +2,18 @@
 
     require_once __DIR__.'/customer.php';
     require_once __DIR__.'/cart.php';
+    require_once __DIR__.'/creditCard.php';
 
     class Order {
         private $customer;
         private $cart;
+        private $creditCard;
         private $date;
-        private $discount = 0;
 
-        public function __construct(Customer $customer, Cart $cart) {
+        public function __construct(Customer $customer, Cart $cart, CreditCard $creditCard) {
             $this->customer = $customer;
             $this->cart = $cart;
+            $this->creditCard = $creditCard;
             $this->date = date('Y-m-d H:i:s');
         }
 
@@ -27,27 +29,10 @@
             return $this->date;
         }
 
-        public function getDiscount() {
-            return $this->discount;
+        public function getCreditCard() {
+            return $this->creditCard;
         }
-
-        public function setDiscount($discount) {
-            $this->discount = $discount;
-        }
-
-        public function discount($isRegistered) {
-            if ($isRegistered == true) {
-                return $this->discount = 20;
-            }
-            else {
-                return $this->discount;
-            }
-        }
-
-        public function OrderConfirmation($paymentValid) {
-
-            
-        }
+        
     }
 
 ?>

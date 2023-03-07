@@ -6,6 +6,9 @@
     require_once __DIR__. '/../classes/toy.php';
     require_once __DIR__. '/../classes/animalCare.php';
     require_once __DIR__. '/../classes/category.php';
+    require_once __DIR__. '/../classes/customer.php';
+    require_once __DIR__. '/../classes/cart.php';
+    require_once __DIR__. '/../classes/order.php';
 
     //CREAZIONE ISTANZE
 
@@ -113,4 +116,28 @@
     );
 
     $animalCareArray = [$animalCare1, $animalCare2, $animalCare3];
+
+    // Istanze Clienti
+    $customer1 = new Customer('piero','pierogmail.com');
+    $customer2 = new Customer('piero','pierogmail.com');
+    $customer3 = new SubscribeCustomer('piero','pierogmail.com');
+    $customer4 = new SubscribeCustomer('piero','pierogmail.com');
+
+
+    // Istanze Carrelli
+    $cart1 = new Cart([$animalCare1, $food2, $toy3]);
+    $cart2 = new Cart([$animalCare2, $food3, $toy1]);
+    $cart3 = new Cart([$animalCare3, $food1, $toy2]);
+    $cart4 = new Cart([$animalCare1, $food2, $toy3]);
+
+    // Istanze Ordini
+    $order1 = new Order($customer1, $cart1);
+    $order2 = new Order($customer2, $cart2);
+    $order3 = new Order($customer3, $cart3);
+    $order4 = new Order($customer4, $cart4);
+
+    // var_dump($order1);
+
+
+
 
